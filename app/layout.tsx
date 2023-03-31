@@ -18,7 +18,7 @@ export default function RootLayout({
           <h1 className='font-bold text-3xl hover:underline'>vinoo.</h1>
         </Link>
         <span className='text-xs text-gray-300'>
-          this is a static site built with NextJS 13 and TailwindCSS
+          this is a static site built with next.js and tailwind css
         </span>
       </div>
     </header>
@@ -27,7 +27,7 @@ export default function RootLayout({
   const footer = (
     <footer>
       <div className='text-center border-t mt-4 py-2'>
-        <h6>developed with NextJS | hosted with Vercel</h6>
+        <h6>developed with next.js | hosted with vercel</h6>
         <p>copyright &copy; 2023 | all rights reserved</p>
       </div>
     </footer>
