@@ -13,13 +13,13 @@ export default function RootLayout({
 }) {
   const header = (
     <header>
-      <div className=' flex justify-between items-center p-8 bg-slate-700 text-white'>
+      <div className='p-8 bg-slate-700 text-white'>
         <Link href='/'>
           <h1 className='font-bold text-3xl hover:underline'>vinoo.</h1>
         </Link>
-        <span className='text-xs text-gray-300'>
+        {/* <span className='text-xs text-gray-300'>
           this is a static site built with next.js and tailwind css
-        </span>
+        </span> */}
       </div>
     </header>
   )
