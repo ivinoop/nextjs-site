@@ -3,7 +3,7 @@
 @tailwind base;
 @layer base {
   html {
-    @apply font-montserrat;
+    @apply font-sans;
   }
 }
 @tailwind components;
