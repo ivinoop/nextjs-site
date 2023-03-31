@@ -8,7 +8,7 @@ const getPostMetaData = (): PostMetaData[] => {
   const mdPosts = files.filter((file) => file.endsWith('.md'))
 
   // Get gray-matter parsed data from each file
-  const posts = mdPosts.map((fileName) => {
+  const posts = [...mdPosts].reverse().map((fileName) => {
     const fileContents = fs.readFileSync(`posts/${fileName}`, 'utf-8')
     const matterResult = matter(fileContents)
     return {
