@@ -4,6 +4,7 @@ import Link from 'next/link'
 import matter from 'gray-matter'
 import getPostMetaData from '@/components/getPostMetadata'
 import Image from 'next/image'
+import { BsArrowLeft } from 'react-icons/bs'
 
 const getPostContent = (slug: string) => {
   const folder = 'posts/'
@@ -39,11 +40,12 @@ const Post = (props: any) => {
       <article className='prose-h3:text-xl prose-h3:font-semibold prose-h3:py-2 prose-p:text-sm prose-p:py-1'>
         <Markdown>{post.content}</Markdown>
       </article>
-      <Link href='/'>
-        <button className='bg-teal-600 text-white px-2 py-1 rounded-md my-3'>
-          👈 All Posts
-        </button>
-      </Link>
+      <button className='bg-teal-600 text-white px-2 py-1 rounded-md my-3'>
+        <Link href='/' className='flex justify-between items-center'>
+          <BsArrowLeft />
+          <span className='ml-1'>All Posts</span>
+        </Link>
+      </button>
     </div>
   )
 }

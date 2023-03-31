@@ -1,7 +1,7 @@
 ---
 title: 'Hello World 1'
 subtitle: 'A first blog post on my digital garden'
-date: '2023-03-31'
+date: '31st March, 2023'
 banner: '/images/hello-there.jpg'
 ---
 
