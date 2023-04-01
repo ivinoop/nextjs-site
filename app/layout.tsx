@@ -2,8 +2,8 @@ import '../public/globals.css'
 import Link from 'next/link'
 
 export const metadata = {
-  title: `Vinoo's Digital Garden`,
-  description: 'A static blog site built with the experimental NextJS 13',
+  title: `vinoo.in - a digital garden`,
+  description: 'a small corner of the internet',
 }
 
 export default function RootLayout({
